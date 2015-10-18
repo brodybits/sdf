@@ -10,10 +10,9 @@
 		9163FD4A1BD3D5AA00C060E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9163FD491BD3D5AA00C060E3 /* main.m */; };
 		9163FD4D1BD3D5AA00C060E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9163FD4C1BD3D5AA00C060E3 /* AppDelegate.m */; };
 		9163FD501BD3D5AA00C060E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9163FD4F1BD3D5AA00C060E3 /* ViewController.m */; };
-		9163FD531BD3D5AA00C060E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9163FD511BD3D5AA00C060E3 /* Main.storyboard */; };
 		9163FD551BD3D5AA00C060E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9163FD541BD3D5AA00C060E3 /* Images.xcassets */; };
-		9163FD581BD3D5AA00C060E3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9163FD561BD3D5AA00C060E3 /* LaunchScreen.xib */; };
 		9163FD641BD3D5AB00C060E3 /* sdfTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9163FD631BD3D5AB00C060E3 /* sdfTests.m */; };
+		9193B5731BD3FAE7001BC36F /* MyDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9193B5721BD3FAE7001BC36F /* MyDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +33,12 @@
 		9163FD4C1BD3D5AA00C060E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9163FD4E1BD3D5AA00C060E3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9163FD4F1BD3D5AA00C060E3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9163FD521BD3D5AA00C060E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9163FD541BD3D5AA00C060E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		9163FD571BD3D5AA00C060E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9163FD5D1BD3D5AB00C060E3 /* sdfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sdfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9163FD621BD3D5AB00C060E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9163FD631BD3D5AB00C060E3 /* sdfTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sdfTests.m; sourceTree = "<group>"; };
+		9193B5711BD3FAE7001BC36F /* MyDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDataSource.h; sourceTree = "<group>"; };
+		9193B5721BD3FAE7001BC36F /* MyDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +82,11 @@
 			children = (
 				9163FD4B1BD3D5AA00C060E3 /* AppDelegate.h */,
 				9163FD4C1BD3D5AA00C060E3 /* AppDelegate.m */,
+				9193B5711BD3FAE7001BC36F /* MyDataSource.h */,
+				9193B5721BD3FAE7001BC36F /* MyDataSource.m */,
 				9163FD4E1BD3D5AA00C060E3 /* ViewController.h */,
 				9163FD4F1BD3D5AA00C060E3 /* ViewController.m */,
-				9163FD511BD3D5AA00C060E3 /* Main.storyboard */,
 				9163FD541BD3D5AA00C060E3 /* Images.xcassets */,
-				9163FD561BD3D5AA00C060E3 /* LaunchScreen.xib */,
 				9163FD471BD3D5AA00C060E3 /* Supporting Files */,
 			);
 			path = sdf;
@@ -199,8 +198,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9163FD531BD3D5AA00C060E3 /* Main.storyboard in Resources */,
-				9163FD581BD3D5AA00C060E3 /* LaunchScreen.xib in Resources */,
 				9163FD551BD3D5AA00C060E3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +218,7 @@
 			files = (
 				9163FD501BD3D5AA00C060E3 /* ViewController.m in Sources */,
 				9163FD4D1BD3D5AA00C060E3 /* AppDelegate.m in Sources */,
+				9193B5731BD3FAE7001BC36F /* MyDataSource.m in Sources */,
 				9163FD4A1BD3D5AA00C060E3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,25 +240,6 @@
 			targetProxy = 9163FD5E1BD3D5AB00C060E3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		9163FD511BD3D5AA00C060E3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9163FD521BD3D5AA00C060E3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9163FD561BD3D5AA00C060E3 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9163FD571BD3D5AA00C060E3 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9163FD651BD3D5AB00C060E3 /* Debug */ = {
@@ -418,6 +397,7 @@
 				9163FD691BD3D5AB00C060E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9163FD6A1BD3D5AB00C060E3 /* Build configuration list for PBXNativeTarget "sdfTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +406,7 @@
 				9163FD6C1BD3D5AB00C060E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

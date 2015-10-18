@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#import "MyDataSource.h"
+
 @interface ViewController : UIViewController
 
+@property(nonatomic, retain) MyDataSource * dataSource;
 
 @end
 

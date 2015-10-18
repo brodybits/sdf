@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+
+#import <JavaScriptCore/JSContext.h>
+#import <JavaScriptCore/JSValue.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +21,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    // http://codefromabove.com/2014/09/xcode-6-removing-storyboards-and-creating-useful-empty-projects/
+    self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
+
+    // http://www.makemegeek.com/uitableview-example-ios/
+    self.window.rootViewController = [[ViewController alloc] init];
+
+    [self.window makeKeyAndVisible];
+    JSContext * context = [[JSContext alloc] init];
+    //[ct evaluateScript: @"context.log('asd')"];
+    JSValue * t = [context evaluateScript: @"3+4"];
+    NSLog(@"sum from Javascript: %d", [t toInt32]);
     return YES;
 }
 

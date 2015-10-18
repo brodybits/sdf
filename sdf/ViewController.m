@@ -17,6 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    //http://stackoverflow.com/a/7153683/1283667
+    // http://stackoverflow.com/a/11451564/1283667
+    UITableView *tv = [[UITableView alloc] initWithFrame: self.view.bounds style: UITableViewStylePlain];
+    self.dataSource = [[MyDataSource alloc] init];
+    tv.dataSource = self.dataSource;
+    [self.view addSubview: tv];
 }
 
 - (void)didReceiveMemoryWarning {
